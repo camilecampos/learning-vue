@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+        table {
+            width:100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: cornsilk;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+
+    <script>
+        var funcionarios = [];
+
+        function adicionar() {
+            var form = document.forms['funcForm'];
+
+            var funcionario = {cpf: form.cpf.value,
+                nome: form.nome.value,
+                cargo: form.cargo.value,
+                salario: form.salario.value};
+
+            funcionarios.push(funcionario);
+            atualizarTabela();
+            console.log(funcionario);
+        }
+
+        function remover(cpf) {
+            alert(cpf);
+        }
+
+        function atualizarTabela() {
+
+            var linhasTabela = "";
+
+            funcionarios.forEach(function (func) {
+                linhasTabela += "<tr><td>" + func.cpf + "</td>" + "<td>" + func.nome + "</td>" + "<td>" + func.cargo + "</td>" + "<td>" + func.salario + "</td>"
+                        + "<td width='10%'><input type='button' value='Remover' onclick='remover(\" " + func.cpf + " \")'/></td>"
+                        + "</tr>";
+            });
+
+            document.getElementById("tabela").innerHTML = "<table><th>Cpf</th><th>Nome</th><th>Cargo</th><th>Salario</th><th></th>" + linhasTabela + "</table>";
+        }
+
+
+    </script>
+
+    <body>
+        <h1>Exemplo de Manipulação de Array e Objetos em JavaScript</h1>
+        <form name="funcForm">
+            <fieldset>
+                <legend>Manutenção de Funcionários</legend>
+                <p>Por favor, preencha os dados abaixo:</p>
+
+                <label for="firstname">CPF:</label>
+                <input type="text" name="cpf"  placeholder="Informe o cpf" autofocus>
+
+                <label for="firstname">Nome:</label>
+                <input type="text" name="nome"  placeholder="Informe o nome" autofocus>
+
+
+                <label for="lastname">Cargo:</label>
+                <input type="text" name="cargo" placeholder="Informe o cargo">
+
+
+                <label for="age">Salário:</label>
+                <input type="number" name="salario" required>
+
+                <input type="button" value="Adicionar" onclick="adicionar()"/>
+            </fieldset>
+        </form>
+
+        <br>
+        <h2>Lista de Funcionários</h2>
+        <input type="button" value="Ordernar por Cpf"/>
+        <input type="button" value="Ordernar por Nome" />
+        <input type="button" value="Ordernar por Salário (DESC)"/>
+        Salario maior que: <input type="number" id="filtoSalario"><input type="button" value="Filtrar"/>
+
+        <br><br>
+        <div id="tabela"></div>
+        <script>
+            document.getElementById("tabela").innerHTML = "<table><th>Nome</th><th>Sobrenome</th><th>Salario</th></table>";
+        </script>
+    </body>
+</html>
