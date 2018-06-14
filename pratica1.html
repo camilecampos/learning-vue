@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    </header>
-    <style>
-        table {
-            width: 100%;
-        }
+<header>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</header>
+<style>
+    table {
+        width: 100%;
+    }
 
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
 
-        th {
-            background-color: cornsilk;
-        }
+    th {
+        background-color: cornsilk;
+    }
 
-        th,
-        td {
-            padding: 5px;
-            text-align: left;
-        }
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+    }
+</style>
 
-    </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body>
+    <div id="app">
+        <h1>Exemplo de Manipulação de Array e Objetos em JavaScript</h1>
+        <form name="funcForm">
+            <fieldset>
+                <legend>Manutenção de Funcionários</legend>
+                <p>Por favor, preencha os dados abaixo:</p>
 
-    <body>
-        <div id="app">
-            <h1>Exemplo de Manipulação de Array e Objetos em JavaScript</h1>
-            <form name="funcForm">
-                <fieldset>
-                    <legend>Manutenção de Funcionários</legend>
-                    <p>Por favor, preencha os dados abaixo:</p>
+                <label for="firstname">CPF:</label>
+                <input type="text" name="cpf" placeholder="Informe o cpf" autofocus>
 
-                    <label for="firstname">CPF:</label>
-                    <input type="text" name="cpf" placeholder="Informe o cpf" autofocus>
-
-                    <label for="firstname">Nome:</label>
-                    <input type="text" name="nome" placeholder="Informe o nome" autofocus>
-
-
-                    <label for="lastname">Cargo:</label>
-                    <input type="text" name="cargo" placeholder="Informe o cargo">
+                <label for="firstname">Nome:</label>
+                <input type="text" name="nome" placeholder="Informe o nome" autofocus>
 
 
-                    <label for="age">Salário:</label>
-                    <input type="number" name="salario" required>
+                <label for="lastname">Cargo:</label>
+                <input type="text" name="cargo" placeholder="Informe o cargo">
 
-                    <input type="button" value="Adicionar" onclick="adicionar()" />
-                </fieldset>kkj
-            </form>
 
-            <br>
-            <h2>{{tituloTabela}}</h2>
-            <input type="button" value="Ordernar por Cpf" />
-            <input type="button" value="Ordernar por Nome" />
-            <input type="button" value="Ordernar por Salário (DESC)" /> Salario maior que: <input type="number" id="filtoSalario"><input type="button" value="Filtrar" />
+                <label for="age">Salário:</label>
+                <input type="number" name="salario" required>
 
-            <br><br>
-            <table>
-                <thead>
-                    <tr>
-                        <th>CPF</th>
-                        <th>Nome</th>
-                        <th>Cargo</th>
-                        <th>Salario</th>
-                        <th> </th>
-                    </tr>
-                </thead>
+                <input type="button" value="Adicionar" onclick="adicionar()" />
+            </fieldset>kkj
+        </form>
 
-                <tr v-for="funcionario in funcionarios">
-                    <td>{{funcionario.cpf}}</td>
-                    <td>{{funcionario.nome}}</td>
-                    <td>{{funcionario.cargo}}</td>
-                    <td>{{funcionario.salario}}</td>
-                    <td v-html="btnRemover"></td>
-                </tr>        
-            </table>
+        <br>
+        <h2>{{tituloTabela}}</h2>
+        <input type="button" value="Ordernar por Cpf" />
+        <input type="button" value="Ordernar por Nome" />
+        <input type="button" value="Ordernar por Salário (DESC)" /> Salario maior que:
+        <input type="number" id="filtoSalario">
+        <input type="button" value="Filtrar" />
 
-        </div>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Salario</th>
+                    <th> </th>
+                </tr>
+            </thead>
 
-        <script>
-            new Vue({
-                el: '#app',
-                data: {
-                    tituloTabela: "Lista de Funcionários",
-                    funcionarios: [{
-                            cpf: "1212",
-                            nome: "rafa",
-                            cargo: "programador",
-                            salario: "2121"
-                        },
-                        {
-                            cpf: "121",
-                            nome: "samantha",
-                            cargo: "programadora",
-                            salario: "2121"
-                        },
-                        {
-                            cpf: "1221211",
-                            nome: "nycolas",
-                            cargo: "programadora",
-                            salario: "2121"
-                        },
-                        {
-                            cpf: "12212121211",
-                            nome: "Felipe",
-                            cargo: "Design",
-                            salario: "2121"
-                        }
-                    ],
-                    btnRemover: "<button type=\"button\" class=\"btn-danger\" v-on:click=\"remove\">remover</button>"
+            <tr v-for="funcionario in funcionarios">
+                <td>{{funcionario.cpf}}</td>
+                <td>{{funcionario.nome}}</td>
+                <td>{{funcionario.cargo}}</td>
+                <td>{{funcionario.salario}}</td>
+                <td v-html="btnRemover"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                tituloTabela: "Lista de Funcionários",
+                funcionarios: [{
+                    cpf: "1212",
+                    nome: "rafa",
+                    cargo: "programador",
+                    salario: "2121"
                 },
-                methods: {
-
+                {
+                    cpf: "121",
+                    nome: "samantha",
+                    cargo: "programadora",
+                    salario: "2121"
+                },
+                {
+                    cpf: "1221211",
+                    nome: "nycolas",
+                    cargo: "programadora",
+                    salario: "2121"
+                },
+                {
+                    cpf: "12212121211",
+                    nome: "Felipe",
+                    cargo: "Design",
+                    salario: "2121"
                 }
-            });
+                ],
+                btnRemover: "<button type=\"button\" class=\"btn-danger\" v-on:click=\"remove\">remover</button>"
+            },
+            methods: {
 
-        </script>
-    </body>
+            }
+        });
+
+    </script>
+</body>
 
 </html>
