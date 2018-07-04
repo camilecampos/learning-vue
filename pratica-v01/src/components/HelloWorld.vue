@@ -20,7 +20,7 @@
             <label for="age">Salário:</label>
             <input type="number" name="salario" required>
 
-            <input type="button" value="Adicionar" onclick="adicionar()" />
+            <input type="button" value="Adicionar" v-on:click="adicionarFuncionario" />
         </fieldset>
     </form>
 
@@ -34,7 +34,24 @@
 
     <br>
     <br>
-    <div id="tabela"></div>
+    <div id="tabela">
+      <table>
+        <tr>
+          <th>CPF</th>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Salario</th>
+          <th></th>
+        </tr>
+        <tr v-for="funcionario in funcionarios" :key="funcionario.cpf">
+          <td>{{ funcionario.cpf }}</td>
+          <td>{{ funcionario.nome }}</td>
+          <td>{{ funcionario.cargo }}</td>
+          <td>{{ funcionario.salario }}</td>
+          <td><input type="button" v-on:click="removeFuncionario(funcionario)"></td>
+        </tr>
+      </table>
+    </div>
     </div>
 </template>
 
@@ -43,24 +60,60 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  data() {
+    return {
+      funcionarios: [
+        {
+          cpf: "09659377777",
+          nome: "camile",
+          cargo: "prog",
+          salario: 30000
+        },
+        {
+          cpf: "25874125478",
+          nome: "debora",
+          cargo: "medica",
+          salario: 500000
+        },
+        {
+          cpf: "32145698762",
+          nome: "cecilia",
+          cargo: "pediatra",
+          salario: 500000
+        },
+        {
+          cpf: "65874133654",
+          nome: "juliana",
+          cargo: "eng",
+          salario: 500002
+        }
+      ]
+    };
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+<style>
+table {
+  width: 100%;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+th {
+  background-color: cornsilk;
 }
-a {
-  color: #42b983;
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
 }
 </style>
