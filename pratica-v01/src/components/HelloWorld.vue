@@ -1,41 +1,50 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+<div class="hello">
+  <h1>Exemplo de Manipulação de Array e Objetos em JavaScript</h1>
+    <form name="funcForm">
+        <fieldset>
+            <legend>Manutenção de Funcionários</legend>
+            <p>Por favor, preencha os dados abaixo:</p>
+
+            <label for="firstname">CPF:</label>
+            <input type="text" name="cpf" placeholder="Informe o cpf" autofocus>
+
+            <label for="firstname">Nome:</label>
+            <input type="text" name="nome" placeholder="Informe o nome" autofocus>
+
+
+            <label for="lastname">Cargo:</label>
+            <input type="text" name="cargo" placeholder="Informe o cargo">
+
+
+            <label for="age">Salário:</label>
+            <input type="number" name="salario" required>
+
+            <input type="button" value="Adicionar" onclick="adicionar()" />
+        </fieldset>
+    </form>
+
+    <br>
+    <h2>Lista de Funcionários</h2>
+    <input type="button" value="Ordernar por Cpf" />
+    <input type="button" value="Ordernar por Nome" />
+    <input type="button" value="Ordernar por Salário (DESC)" /> <p>Salario maior que:</p>
+    <input type="number" id="filtoSalario">
+    <input type="button" value="Filtrar" />
+
+    <br>
+    <br>
+    <div id="tabela"></div>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
