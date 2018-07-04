@@ -7,20 +7,20 @@
             <p>Por favor, preencha os dados abaixo:</p>
 
             <label for="firstname">CPF:</label>
-            <input type="text" name="cpf" placeholder="Informe o cpf" autofocus>
+            <input type="text" name="cpf" v-model="cpf" placeholder="Informe o cpf" autofocus>
 
             <label for="firstname">Nome:</label>
-            <input type="text" name="nome" placeholder="Informe o nome" autofocus>
+            <input type="text" name="nome" v-model="nome" placeholder="Informe o nome" autofocus>
 
 
             <label for="lastname">Cargo:</label>
-            <input type="text" name="cargo" placeholder="Informe o cargo">
+            <input type="text" name="cargo" v-model="cargo" placeholder="Informe o cargo">
 
 
             <label for="age">Salário:</label>
-            <input type="number" name="salario" required>
+            <input type="number" name="salario" v-model="salario" required>
 
-            <input type="button" value="Adicionar" v-on:click="adicionarFuncionario" />
+            <input type="button" value="Adicionar" v-on:click="adicionarFuncionario()" />
         </fieldset>
     </form>
 
@@ -48,7 +48,7 @@
           <td>{{ funcionario.nome }}</td>
           <td>{{ funcionario.cargo }}</td>
           <td>{{ funcionario.salario }}</td>
-          <td><input type="button" v-on:click="removeFuncionario(funcionario)"></td>
+          <td><input type="button" v-on:click="removeFuncionario(funcionario)" value="x"></td>
         </tr>
       </table>
     </div>
@@ -88,7 +88,13 @@ export default {
           cargo: "eng",
           salario: 500002
         }
-      ]
+      ],
+      methods: {
+        adicionarFuncionario() {
+          //const task = clone(this.newTask);
+          //this.funcionarios.push(funcionarioNovo);
+        }
+      }
     };
   }
 };
