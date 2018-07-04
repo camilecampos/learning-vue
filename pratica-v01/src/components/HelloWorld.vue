@@ -20,7 +20,7 @@
             <label for="age">Salário:</label>
             <input type="number" name="salario" v-model="salario" required>
 
-            <input type="button" value="Adicionar" v-on:click="adicionarFuncionario()" />
+            <button type="button" v-on:click="adicionarFuncionario">Adicionar</button>
         </fieldset>
     </form>
 
@@ -48,7 +48,7 @@
           <td>{{ funcionario.nome }}</td>
           <td>{{ funcionario.cargo }}</td>
           <td>{{ funcionario.salario }}</td>
-          <td><input type="button" v-on:click="removeFuncionario(funcionario)" value="x"></td>
+          <td><button type="button" v-on:click="removeFuncionario(funcionario)">x</button></td>
         </tr>
       </table>
     </div>
@@ -63,6 +63,10 @@ export default {
   },
   data() {
     return {
+      cpf: "",
+      nome: "",
+      cargo: "",
+      salario: "",
       funcionarios: [
         {
           cpf: "09659377777",
@@ -88,14 +92,25 @@ export default {
           cargo: "eng",
           salario: 500002
         }
-      ],
-      methods: {
-        adicionarFuncionario() {
-          //const task = clone(this.newTask);
-          //this.funcionarios.push(funcionarioNovo);
-        }
-      }
+      ]
     };
+  },
+  methods: {
+    adicionarFuncionario: function() {
+      //const task = clone(this.newTask);
+      //this.funcionarios.push(funcionarioNovo);
+      var func = {
+        cpf: this.cpf,
+        nome: this.nome,
+        cargo: this.cargo,
+        salario: this.salario
+      };
+      this.funcionarios.push(func);
+      this.cpf = "";
+      this.nome = "";
+      this.cargo = "";
+      this.salario = "";
+    }
   }
 };
 </script>
