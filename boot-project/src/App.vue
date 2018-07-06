@@ -11,6 +11,7 @@
     <b-navbar-nav>
       <b-nav-item href="#/">Home</b-nav-item>
       <b-nav-item href="#/test">Test</b-nav-item>
+      <b-nav-item href="#/crime">Crime</b-nav-item>
       <b-nav-item href="#" disabled>Disabled</b-nav-item>
     </b-navbar-nav>
 

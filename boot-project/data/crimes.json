@@ -1,0 +1,312 @@
+{
+  "crimes": [
+    {
+      "id": 30004,
+      "cidade": "CARUARU",
+      "data_ocorrencia": "2015-04-30",
+      "idade": 19,
+      "nome": "ALLYSSON MARCOS BARBOSA OLIVEIRA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30005,
+      "cidade": "PALMARES",
+      "data_ocorrencia": "2015-04-30",
+      "idade": 33,
+      "nome": "ANDERSON DA SILVA MENDES",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30006,
+      "cidade": "JABOATAO DOS GUARARAPES",
+      "data_ocorrencia": "2015-04-30",
+      "idade": 20,
+      "nome": "HUMBERTO LUIS DA SILVA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30007,
+      "cidade": "PALMARES",
+      "data_ocorrencia": "2015-04-30",
+      "idade": 51,
+      "nome": "NOEL VASCONCELOS DA SILVA",
+      "objeto_utilizado": "ARMA BRANCA",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30008,
+      "cidade": "PETROLINA",
+      "data_ocorrencia": "2015-04-30",
+      "idade": 31,
+      "nome": "ROSILENE RAMOS DO RIO",
+      "objeto_utilizado": "ARMA BRANCA",
+      "qtd_vitimas": 1,
+      "sexo": "FEMININO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30009,
+      "cidade": "CABO DE SANTO AGOSTINHO",
+      "data_ocorrencia": "2015-04-30",
+      "idade": 19,
+      "nome": "RUAN JOSE AUGUSTO",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30010,
+      "cidade": "CARUARU",
+      "data_ocorrencia": "2015-04-30",
+      "idade": 19,
+      "nome": "WILLAMS ANDERSON FERREIRA DA SILVA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30011,
+      "cidade": "CARUARU",
+      "data_ocorrencia": "2015-04-29",
+      "idade": 16,
+      "nome": "CRISTIANE CAVALCANTE DA SILVA",
+      "objeto_utilizado": "OUTROS TIPOS DE OBJETOS",
+      "qtd_vitimas": 1,
+      "sexo": "FEMININO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30012,
+      "cidade": "ESCADA",
+      "data_ocorrencia": "2015-04-29",
+      "idade": 32,
+      "nome": "JOSE ANTONIO DE OLIVEIRA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30013,
+      "cidade": "LAGOA DOS GATOS",
+      "data_ocorrencia": "2015-04-29",
+      "idade": 26,
+      "nome": "LUIS FELIPE DA SILVA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30014,
+      "cidade": "CARUARU",
+      "data_ocorrencia": "2015-04-29",
+      "idade": 70,
+      "nome": "PAULO FERNANDO GUEDES",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30015,
+      "cidade": "OLINDA",
+      "data_ocorrencia": "2015-04-29",
+      "idade": 24,
+      "nome": "ROMARIO VENTURA RIBEIRO",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30016,
+      "cidade": "SANTA MARIA DO CAMBUCA",
+      "data_ocorrencia": "2015-04-28",
+      "idade": 53,
+      "nome": "AIRTON VITALINO DE OLIVEIRA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30017,
+      "cidade": "PASSIRA",
+      "data_ocorrencia": "2015-04-28",
+      "idade": 49,
+      "nome": "CICERO JOSE DE FRANCA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30018,
+      "cidade": "PETROLINA",
+      "data_ocorrencia": "2015-04-28",
+      "idade": 36,
+      "nome": "EDIVAN GOMES BEZERRA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30019,
+      "cidade": "CABO DE SANTO AGOSTINHO",
+      "data_ocorrencia": "2015-04-28",
+      "idade": 26,
+      "nome": "IDENTIDADE DESCONHECIDA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30020,
+      "cidade": "SAO BENEDITO DO SUL",
+      "data_ocorrencia": "2015-04-28",
+      "idade": 0,
+      "nome": "IDENTIDADE DESCONHECIDA",
+      "objeto_utilizado": "OUTROS TIPOS DE OBJETOS",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30021,
+      "cidade": "JABOATAO DOS GUARARAPES",
+      "data_ocorrencia": "2015-04-28",
+      "idade": 39,
+      "nome": "JOSE RAIMUNDO BARROS DOS SANTOS",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "LATROCINIO"
+    },
+    {
+      "id": 30022,
+      "cidade": "RECIFE",
+      "data_ocorrencia": "2015-04-27",
+      "idade": 30,
+      "nome": "IDENTIDADE DESCONHECIDA",
+      "objeto_utilizado": "ARMA BRANCA",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30023,
+      "cidade": "CAMARAGIBE",
+      "data_ocorrencia": "2015-04-27",
+      "idade": 52,
+      "nome": "JOSE CICERO CUSTODIO DA SILVA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30024,
+      "cidade": "POCAO",
+      "data_ocorrencia": "2015-04-27",
+      "idade": 28,
+      "nome": "JOSE ERIVALDO SILVA DE LIMA",
+      "objeto_utilizado": "ARMA BRANCA",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30025,
+      "cidade": "VERTENTES",
+      "data_ocorrencia": "2015-04-27",
+      "idade": 22,
+      "nome": "RAFAEL LEMOS ALVES DA SILVA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30026,
+      "cidade": "NAZARE DA MATA",
+      "data_ocorrencia": "2015-04-27",
+      "idade": 33,
+      "nome": "SEVERINO JOAO DOS SANTOS",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30027,
+      "cidade": "RECIFE",
+      "data_ocorrencia": "2015-04-27",
+      "idade": 18,
+      "nome": "WELLINTON JULIO MARINHO DA SILVA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30028,
+      "cidade": "PAUDALHO",
+      "data_ocorrencia": "2015-04-26",
+      "idade": 24,
+      "nome": "ADIMILSON JOSE DE SANTANA",
+      "objeto_utilizado": "ARMA BRANCA",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30029,
+      "cidade": "GOIANA",
+      "data_ocorrencia": "2015-04-26",
+      "idade": 41,
+      "nome": "AGNALDO DA PAZ TEIXEIRA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30030,
+      "cidade": "RECIFE",
+      "data_ocorrencia": "2015-04-26",
+      "idade": 17,
+      "nome": "CHRISTIAN FRANCA DE OLIVEIRA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    },
+    {
+      "id": 30031,
+      "cidade": "RECIFE",
+      "data_ocorrencia": "2015-04-26",
+      "idade": 34,
+      "nome": "CIRO AUGUSTO DA SILVA",
+      "objeto_utilizado": "ARMA DE FOGO",
+      "qtd_vitimas": 1,
+      "sexo": "MASCULINO",
+      "tipo_crime": "HOMICIDIO"
+    }
+  ]
+}

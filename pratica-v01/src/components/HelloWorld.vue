@@ -106,6 +106,7 @@ export default {
         salario: this.salario
       };
       this.funcionarios.push(func);
+      //apaga os inputs
       this.cpf = "";
       this.nome = "";
       this.cargo = "";
