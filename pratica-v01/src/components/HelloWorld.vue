@@ -48,7 +48,7 @@
           <td>{{ funcionario.nome }}</td>
           <td>{{ funcionario.cargo }}</td>
           <td>{{ funcionario.salario }}</td>
-          <td><button type="button" v-on:click="removeFuncionario(funcionario)">x</button></td>
+          <td><button type="button" v-on:click="removeFuncionario(funcionario.cpf)">x</button></td>
         </tr>
       </table>
     </div>
@@ -97,8 +97,6 @@ export default {
   },
   methods: {
     adicionarFuncionario: function() {
-      //const task = clone(this.newTask);
-      //this.funcionarios.push(funcionarioNovo);
       var func = {
         cpf: this.cpf,
         nome: this.nome,
@@ -111,6 +109,15 @@ export default {
       this.nome = "";
       this.cargo = "";
       this.salario = "";
+    },
+    removeFuncionario: function(cpf) {
+      console.log("cpf " + cpf);
+      console.log("funcionarios " + JSON.stringify(this.funcionarios));
+      //this.funcionarios.$delete(this.funcionarios, cpf);
+      //this.funcionarios.splice(cpf, 1);
+      var index = this.funcionarios.indexOf(cpf);
+      this.funcionarios.splice(index, 1);
+      console.log("funcionarios " + JSON.stringify(this.funcionarios));
     }
   }
 };
